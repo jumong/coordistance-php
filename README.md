@@ -10,9 +10,14 @@ For further information about the theory refere to Wikipedia: https://en.wikiped
 
 ```php
 include 'coordistance.php';
+
 $parameters = array();
 $parameters["lat1"] = 41.9;
 $parameters["lon1"] = 12.5;
 $parameters["lat2"] = 51.507222;
 $parameters["lon2"] = -0.1275;
-```
+
+$distance = new CoorDistance($parameters);
+
+$h_distance = $distance->haversine();
+``
