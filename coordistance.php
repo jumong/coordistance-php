@@ -109,10 +109,5 @@ class CoorDistance {
 
 		return $distance;
 
-	}
-
-
-	
+	}	
 }
-
-?>

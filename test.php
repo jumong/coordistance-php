@@ -14,5 +14,3 @@ echo "<pre>First point (Rome) coordinates: (".$distance->lat1.", ".$distance->lo
 echo "<pre>Second point (London) coordinates: (".$distance->lat2.", ".$distance->lon2.")".PHP_EOL."</pre>";
 echo "<pre>Distance is (Using Haversine formula): ".$distance->haversine().PHP_EOL."</pre>";
 echo "<pre>Distance is (Using Vincenty formula): ".$distance->vincenty().PHP_EOL."<pre>";
-
-?>
