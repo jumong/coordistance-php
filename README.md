@@ -4,7 +4,7 @@
 
 A simple php class that implements the **Haversine** and **Vincenty** formulas following the **Great-circle distance theory**, giving the distance of two points on the Earth.
 
-For further information about the theory refere to Wikipedia: https://en.wikipedia.org/wiki/Great-circle_distance
+For further information about the theory refer to Wikipedia: https://en.wikipedia.org/wiki/Great-circle_distance
 
 The class offers the feature to have distances in kilometers (Default setting), miles, meters and set the earth radius (Deafult setting radius = 6372.795477598).
 
