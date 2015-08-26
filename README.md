@@ -2,9 +2,11 @@
 
 ## Introduction
 
-A simple php class that implements the **Great-circle distance theory**, giving the distance of two points on the hearth, using the two most commons formulas, **Haversine** and **Vincenty**.
+A simple php class that implements the **Haversine** and **Vincenty** formulas following the **Great-circle distance theory**, giving the distance of two points on the Earth.
 
 For further information about the theory refere to Wikipedia: https://en.wikipedia.org/wiki/Great-circle_distance
+
+The class offers the feature to have distances in kilometers (Default setting), miles, meters and set the earth radius (Deafult setting radius = 6372.795477598).
 
 ## Basic use
 
@@ -41,7 +43,7 @@ will give the distance in miles
 
 ### Earth radius
 
-As default value the earth radius is set as 6371.005076123
+As default value the earth radius is set as 6372.795477598
 
 In case it is needed to set it to another value, as example to match existing calculations with another value:
 
@@ -59,4 +61,7 @@ The class implement both Haversine and Vincenty formulas.
 $v_distance = $distance->vincenty();
 ```
 
-In some cases the Vincenty formula is more accurate, anyway the execution time is approx 50% longer.
+In some cases the Vincenty formula is more accurate, anyway the execution time requires a longer time.
+
+
+

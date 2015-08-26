@@ -91,20 +91,20 @@ class CoorDistance {
 
 		$angle = atan2(sqrt($a), $b);
 		
-		$distancekm = $angle * $this->radius;
+		$distanceKm = $angle * $this->radius;
 		
 		switch ($this->unit) {
 			case "kilometer":
-			$distance = $distancekm;
+			$distance = $distanceKm;
 			break;
 			case "meter":
-			$distance = $distancekm * 1000; 
+			$distance = $distanceKm * 1000; 
 			break;
 			case "mile":
-			$distance = $distancekm * 0.621371192;
+			$distance = $distanceKm * 0.621371192;
 			break;
 			default:
-			$distance = $distancekm;
+			$distance = $distanceKm;
 		}
 
 		return $distance;
