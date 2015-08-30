@@ -21,7 +21,7 @@ $parameters["lon2"] = -0.1275;
 
 $distance = new CoorDistance($parameters);
 
-$h_distance = $distance->haversine();
+$haversineDistance = $distance->haversine();
 ```
 ## Options
 
@@ -31,13 +31,13 @@ The two methods return a result in kilometers. It's possible to have it in meter
 
 ```
 $distance->unit = "meter";
-$h_distance = $distance->haversine();
+$haversineDistance = $distance->haversine();
 ```
 will give the distance in meters
 
 ```
 $distance->unit = "mile";
-$h_distance = $distance->haversine();
+$haversineDistance = $distance->haversine();
 ```
 will give the distance in miles
 
@@ -49,7 +49,7 @@ In case it is needed to set it to another value, as example to match existing ca
 
 ```
 $distance->radius = "6378";
-$h_distance = $distance->haversine();
+$haversineDistance = $distance->haversine();
 ```
 will return the distance calculated with this radius. Of course it is possible to calculate the distance of any arch of any sphere. Just remember that radius is expressed in kilometers as the default result.
 
@@ -58,7 +58,7 @@ will return the distance calculated with this radius. Of course it is possible t
 The class implement both Haversine and Vincenty formulas.
 
 ```
-$v_distance = $distance->vincenty();
+$vincentyDistance = $distance->vincenty();
 ```
 
 In some cases the Vincenty formula is more accurate, anyway the execution time requires a longer time.
